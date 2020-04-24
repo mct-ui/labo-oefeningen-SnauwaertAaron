@@ -374,6 +374,52 @@ a:focus {
 }
 
 /*
+    Components: Navigation
+    ---
+    Main navigation of the website
+*/
+
+.c-nav {
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.c-nav__link {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    padding: 8px 0;     
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+    color: #DBEDFF;
+    text-shadow: 0 0 8px;
+}
+
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .c-nav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .c-nav__link {
+        padding: 12px 16px;
+    }
+}
+
+
+
+/*
     Objects: List
     ---
     Small reusable object to remove default list styling from lists
@@ -392,6 +438,35 @@ a:focus {
 }
 .c-logo__symbol {
     height: 32px;
+}
+
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-header__nav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-header__logo,
+    .c-header__nav {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .c-header__nav {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 /*------------------------------------*\
