@@ -469,6 +469,40 @@ a:focus {
     }
 }
 
+/*
+    Components: cta
+    ---
+    Styling of cta link
+*/
+
+.c-knop-cta {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    padding: 16px 32px;
+    background: linear-gradient(to right, #033AA7 0%, #0053FB 51%, #0053FB 100%);
+    border: 1px solid rgba(142, 199, 255, 0.2);
+    box-shadow: 0 0 10px rgba(142, 199, 255, 0.2);
+
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.c-knop-cta,
+.c-knop-cta:visited,
+.c-knop-cta:active {
+    color: #DBEDFF;
+}
+
+.c-knop-cta:hover {
+    color: #fff;
+    background-position: right center;
+}
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
